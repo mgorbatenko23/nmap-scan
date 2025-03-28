@@ -1,0 +1,20 @@
+[project]
+name = "nmap-scan"
+version = "1.0.0"
+requires-python = ">=3.9"
+authors = [
+  {name = "Mihail Gorbatenko", email = "mgorbatenko23@gmail.com"}
+]
+description = "Allows you to use native Nmap scanner commands to scan hosts. As a result of scanning, we get a list of dataclasses. Which is convenient to use further in your scripts."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "GPL-3.0-or-later"}
+license-files = ["LICENSE"]
+keywords = ["nmap", "netscan"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python"
+]
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
