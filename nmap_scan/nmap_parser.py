@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
+import typing as t
 from collections import defaultdict
 from ipaddress import IPv4Address
-import typing as t
 
 from nmap_scan.data import Host
 from nmap_scan.exceptions import NmapXMLParserError, XMLElementNotFound
