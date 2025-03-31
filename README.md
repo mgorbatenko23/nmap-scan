@@ -31,7 +31,7 @@ Ping scanning. Nmap scanner:
 ```sh
 nmap -n -sn -PE --min-rtt-timeout 1s 10.10.1.64-128 10.10.2.100
 ```
-Ping scanning. Nmap scanner:
+Using the nmap-scan library:
 ```python
 import nmap_scan
 nmap = nmap_scan.Nmap()
