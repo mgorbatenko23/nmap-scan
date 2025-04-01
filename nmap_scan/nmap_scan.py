@@ -21,8 +21,6 @@ class Nmap:
             >>> nmap = Nmap()
             >>> nmap.scan(['10.10.1.0/24'], '-n -sn -v')
             >>> nmap.get_scan_result_as_json()
-                        or
-            >>> nmap.get_scan_result()
     """
 
     def __init__(self, *, path: t.Optional[str] = None) -> None:
