@@ -34,6 +34,13 @@ class Nmap:
              timeout: t.Optional[int] = None) -> None:
         """ Perform a scan in accordance with the specified
             parameters of the nmap scanner.
+
+            Args:
+                targets: List of targets to scan. In Nmap scanner format.
+                options: Scan options. In Nmap scanner format.
+                timeout: How long to perform the scan in seconds. 
+                         If the scan does not complete,
+                         an exception will occur - NmapExecutionError.
         """
         self._cmd_line = self._get_nmap_command(targets, options)
         self._nmap_xml_output = self._run_nmap_command(self._cmd_line, timeout)
